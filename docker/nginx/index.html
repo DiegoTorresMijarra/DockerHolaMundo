@@ -1,26 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola Mundo</title>
-    <style>
-        body {
-            background-color: #f0f0f0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        h1 {
-            color: blue;
-        }
-    </style>
+    <title>Formulario</title>
 </head>
 <body>
-    <h1>Hola Mundo</h1>
+    <form action="http://localhost:3000/api/saveName" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">Guardar</button>
+    </form>
 </body>
 </html>
